@@ -19,31 +19,37 @@ A Streamlit-based Financial Policy chatbot that uses a RAG (Retrieval-Augmented 
 
 ## Setup
 
-1. **Create and activate a virtual environment:**
+Choose either `pip` or `uv` to create a virtual environment and install dependencies.
 
-   ```bash
-   python -m venv venv
+### Using pip
 
-   # macOS / Linux
-   source venv/bin/activate
+```bash
+python -m venv venv
 
-   # Windows (PowerShell)
-   .\venv\Scripts\Activate.ps1
+# macOS / Linux
+source venv/bin/activate
 
-   # Windows (Command Prompt)
-   venv\Scripts\activate.bat
-   ```
+# Windows (PowerShell)
+.\venv\Scripts\Activate.ps1
 
-2. **Install dependencies:**
+# Windows (Command Prompt)
+venv\Scripts\activate.bat
 
-   ```bash
-   pip install -r requirements.txt
+pip install -r requirements.txt
+```
 
-   # or, with uv
-   uv pip install -r requirements.txt
-   ```
+### Using uv
 
-3. **Configure your API key:**
+```bash
+uv venv venv
+
+# Activate the environment using the command for your platform above, then:
+uv pip install -r requirements.txt
+```
+
+Install [uv](https://docs.astral.sh/uv/getting-started/installation/) first if it is not already available.
+
+### Configure your API key
 
    Copy `.env.example` to `.env` in the project root and set your key:
 
