@@ -1,0 +1,23 @@
+# Financial Policy Document Assistant Configuration
+
+llm:
+  model_name: gpt-5.5
+  temperature: 0
+
+embeddings:
+  model: text-embedding-ada-002
+
+chunking:
+  chunk_size: 1000
+  chunk_overlap: 200
+  separators: ["\n\n", "\n", ".", " ", ""]
+
+retriever:
+  search_type: similarity
+  k: 10
+
+vector_store:
+  persist_directory: db
+
+data:
+  docs_folder: data/sample_pdfs
